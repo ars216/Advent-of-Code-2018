@@ -7,7 +7,7 @@ public class Frequency {
 
 		int frequency = 0;
 
-		Scanner infile = new Scanner(new FileReader("input.txt"));
+		Scanner infile = new Scanner(new FileReader("frequencyInput.txt"));
 		while (infile.hasNext()) {
 			frequency = frequency + infile.nextInt();
 		}
