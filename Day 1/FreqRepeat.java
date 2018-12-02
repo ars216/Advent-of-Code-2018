@@ -7,18 +7,14 @@ public class FreqRepeat {
 
 		int frequency = 0;
 		ArrayList<Integer> freqList = new ArrayList<Integer>();
-		int firstRepeat = -2147483648;
 
-		while (firstRepeat == -2147483648) {
-
+		while (true) {
 			Scanner infile = new Scanner(new FileReader("input.txt"));
-			
 			while (infile.hasNext()) {
 				frequency = frequency + infile.nextInt();
 
-				if (freqList.contains(frequency)) {
-					firstRepeat = frequency;
-					System.out.println("First repeated frequency = " + firstRepeat);
+				if (freqList.contains(frequency) {
+					System.out.println("First repeated frequency = " + frequency);
 					break;
 				}
 
